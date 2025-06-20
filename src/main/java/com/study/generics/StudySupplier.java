@@ -15,14 +15,14 @@ public class StudySupplier {
 
     public static void main(String[] args) {
         runSupplier();
-        runSupplier2();
+        runSupplier2(testSupplier);
     }
 
     public static void runSupplier() {
-        System.out.print(testSupplier.get());
+        System.out.println(testSupplier.get());
     }
 
-    public static void runSupplier2() {
-        System.out.print(getString());
+    public static void runSupplier2(Supplier<String> testSupplierParam) {
+        System.out.println(testSupplierParam.get());
     }
 }
