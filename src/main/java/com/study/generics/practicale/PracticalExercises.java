@@ -19,4 +19,5 @@ public class PracticalExercises {
         System.out.println("最終結果: " + result);
 
     }
+
 }
