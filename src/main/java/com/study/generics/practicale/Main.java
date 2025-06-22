@@ -13,10 +13,20 @@ public class Main {
 
     public static void main(String[] args) {
         PracticalExercises practicalExercises = new PracticalExercises();
-        List<Function<String,String>> functions = new ArrayList<>();
+        List<Function<String, String>> functions = new ArrayList<>();
+        boolean condition = true;
+        boolean condition2 = true;
 
-        functions.add(functionFirst);
-        functions.add(functionSecond);
+        // 呼び出し元で何をさせるか制御
+        if (condition) {
+            functions.add(functionFirst);
+        }
+
+        // 呼び出し元で何をさせるか制御
+        if (condition2) {
+            functions.add(functionSecond);
+        }
+
         practicalExercises.execute(functions, "入力値");
     }
 
