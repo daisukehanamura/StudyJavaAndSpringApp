@@ -14,6 +14,7 @@ public class Main {
     public static void main(String[] args) {
         PracticalExercises practicalExercises = new PracticalExercises();
         List<Function<String,String>> functions = new ArrayList<>();
+
         functions.add(functionFirst);
         functions.add(functionSecond);
         practicalExercises.execute(functions, "入力値");
