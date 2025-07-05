@@ -1,4 +1,4 @@
-package com.main;
+package com.study;
 
 import com.study.aop.AopExecute;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +10,6 @@ public class StudyJavaAndSpringApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StudyJavaAndSpringApplication.class, args);
-
+		System.out.print("HelloWorld");
 	}
 }
