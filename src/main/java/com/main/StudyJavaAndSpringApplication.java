@@ -1,4 +1,4 @@
-package com.study;
+package com.main;
 
 import com.study.aop.AopExecute;
 import org.springframework.beans.factory.annotation.Autowired;
