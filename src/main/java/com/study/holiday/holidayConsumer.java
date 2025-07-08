@@ -14,6 +14,23 @@ public class holidayConsumer {
 
         static Consumer<String> testConsumer3 = System.out::println;
 
+        static Consumer<List<String>> testConsumer4 = list -> {
+            for (String item : list) {
+                System.out.println(item);
+                System.out.println("月を跨る処理");
+
+            }
+        };
+
+        static Consumer<List<String>> testConsumer5 = list -> list.forEach(System.out::println);
+
+        static Consumer<List<String>> testConsumer6 = list -> {
+            for (String item : list) {
+                System.out.println(item);
+                System.out.println("月を跨らない処理");
+
+            }
+        };
     }
 
     // 呼び出し
