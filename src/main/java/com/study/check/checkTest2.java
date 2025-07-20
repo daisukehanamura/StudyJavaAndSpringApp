@@ -1,4 +1,4 @@
-package com.check;
+package com.study.check;
 
 import java.util.ArrayList;
 import java.util.List;

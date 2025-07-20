@@ -1,4 +1,4 @@
-package com.check;
+package com.study.check;
 
 public class checkTest {
 
