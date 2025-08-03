@@ -12,15 +12,15 @@ public class HelloWorldController {
     private final AopExecute aopExecute;
 
     @Autowired
-    public HelloWorldController(AopExecute aopExecute){
+    public HelloWorldController(AopExecute aopExecute) {
         this.aopExecute = aopExecute;
     }
 
     @GetMapping
-    @RequestMapping(value="/hello")
-    public String HelloWorld(){
+    @RequestMapping(value = "/hello")
+    public String HelloWorld() {
         aopExecute.execute();
-        return "index2.html";
+        return "index.html";
     }
 
 }
