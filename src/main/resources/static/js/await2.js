@@ -44,3 +44,16 @@ async function sample() {
 
 const test = await sample();
 console.log(test); // => 15
+
+
+// これらも同じだお
+function sampleResolve(value) {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(value * 2), 2000);
+  });
+}
+
+async function sampleResolve(value) {
+  await new Promise(resolve => setTimeout(resolve, 2000));
+  return value * 2;
+}
